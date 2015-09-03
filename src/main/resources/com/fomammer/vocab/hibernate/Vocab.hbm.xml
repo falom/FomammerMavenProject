@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+	<class name="com.fomammer.vocab.model.Vocabulary" table="vocabulary"
+		catalog="fomammer">
+		<id name="vocabNo" type="java.lang.Integer">
+			<column name="vocabNo" />
+			<generator class="identity" />
+		</id>
+		 <property name="vocabulary" type="string">
+            <column name="vocabulary" not-null="true" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="updateDate" length="19" not-null="true" />
+        </property>
+	</class>
+</hibernate-mapping>

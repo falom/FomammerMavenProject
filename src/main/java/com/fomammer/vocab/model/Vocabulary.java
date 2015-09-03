@@ -1,11 +1,11 @@
 package com.fomammer.vocab.model;
 
 import java.util.Date;
-
 public class Vocabulary implements java.io.Serializable {
 
 	private int vocabNo;
 	private String vocabulary;
+	private Date updateDate;
 	
 	public Vocabulary() {
 		// TODO Auto-generated constructor stub
@@ -25,6 +25,14 @@ public class Vocabulary implements java.io.Serializable {
 
 	public void setVocabulary(String vocabulary) {
 		this.vocabulary = vocabulary;
+	}
+
+	public Date getUpdateDate() {
+		return updateDate;
+	}
+
+	public void setUpdateDate(Date updateDate) {
+		this.updateDate = updateDate;
 	}
 	
 	
